@@ -1,0 +1,533 @@
+
+.container-fluid{
+}
+#wrapper{
+    position: relative;
+    min-height: 100vh
+}
+.bd-pageheader{
+
+    background-image: url("../images/4-fd-31214-d-3-b-848539-f-3-ccbbafaea-95-bb-6@2x.png");
+    background-size: cover;
+    height: 321px;
+}
+
+.aljazera_logo {
+    height: 50px;
+    width: 190px;
+    margin-top: 14px;
+    margin-bottom: 48px;
+}
+
+
+
+.card-box{
+    min-height: 700px
+}
+@media only screen and (max-width: 768px) {
+
+    .card-box{
+        min-height: 1000px
+    }
+}
+.card {
+    background-color: #fff;
+    border-radius: 2px;
+
+    margin-top: -93px;
+    box-shadow: 0 2px 4px 0 rgba(166, 166, 166, 0.5);
+}
+
+.card-block {
+
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+
+.font-weight-bold {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #979797;
+    background-clip: padding-box;
+    /* border-radius: .25rem; */
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+}
+
+
+.Email {
+    width: 40px;
+    height: 22px;
+    font-family: Avenir;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    height: 22px;
+    /* font-family: Avenir; */
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+.btn-danger {
+    color: #fff;
+    background-color: #cf6766;
+    border-color: #cf6766;
+}
+
+
+.btn {
+    width: 143px;
+    height: 48px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #cf6766;
+    border-color: #cf6766;
+    font-size: 17px;
+}
+
+
+.bg-inverse {
+    background-color: #272a2a!important;
+    height: 68px;
+}
+@media only screen and (max-width: 768px) {
+
+    .bg-inverse {
+        height: auto;
+    }
+
+}
+
+a {
+    font-family: HelveticaNeueLTPro-Bd;
+    color: #cecece;
+}
+
+.padding30 h3 {
+
+    font-size: 18px;
+    text-align: left;
+    color: #666666;
+    font-weight: 800;
+
+}
+
+.padding30 {
+
+
+    padding-top: 25px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+footer .container-fluid {
+    background-color: #000;
+}
+
+.container-fluid {
+
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer ul {
+    padding: 0;
+    float: left;
+}
+
+.footer-ul a {
+    color: #666666;
+    line-height: 37px;
+
+}
+
+ul.footer-ul.footer-ul-last {
+    margin-left: 18px;
+}
+
+footer img {
+    margin-top: 43px;
+    width: 150px;
+}
+@media only screen and (max-width: 768px) {
+    .footer-right p{text-align: center!important;}
+}
+/******************************************/
+/* index page */
+
+.wrapper{background: #f2f2f2;height: 100%;position: relative}
+.wrapper footer{position: static}
+/*header*/
+header{
+    background: url("../images/header-bg.png");
+    background-size: 100% 100%;
+    height: 500px;
+    object-fit: contain;
+    margin-bottom: 135px;
+}
+header .aljazera-logo img{
+    width: 29.7px;
+    height: 49.8px;
+}
+header .aljazera-logo span{
+    color: #ffffff;
+    display: inline-block;
+    text-transform: capitalize;
+    vertical-align: -webkit-baseline-middle;
+    font-size: 25px;
+}
+header .nav ul{
+    margin: 0;
+    padding: 15px;
+    text-align: right;
+}
+header .nav ul li{
+    display: inline-block;
+}
+header .nav ul li a,
+header .nav ul li a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+header .nav ul li a.dropdown-item{
+    color: #000000;
+}
+header .title{min-height: 300px}
+header .Search-20-years{
+    width: 370px;
+    height: 152px;
+    font-family: Avenir;
+    font-size: 26px;
+    font-weight: 900;
+    line-height: 1.46;
+    text-align: left;
+    color: #ffffff;
+}
+
+header .search-card{
+    position: relative;
+    max-width: 770px;
+    max-height: 127px;
+    min-width: 770px;
+    min-height: 127px;
+    padding: 34px 40px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px 0 rgba(166, 166, 166, 0.5);
+    bottom: -80px;
+}
+header .search-card .form-group{
+    margin: 0;
+    padding-top:5px ;
+}
+
+header .search-card .form-group .form-control{
+    display: inline-block;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    border-radius: 0;
+    height: 40px;
+}
+
+header .search-card  label{
+    width: auto;
+    height: auto;
+    background: #cf6766;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    bottom: 11px;
+}
+header .search-card  label img{
+    width: 30px;
+}
+header .search-card  .btn-group>.btn:first-child:focus{
+
+    background: none;
+    border: none;
+    outline: none!important;
+    box-shadow: none!important;
+}
+header .search-card  .btn-group>.btn:first-child {
+    margin-left: 0;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+header .search-card input#submit{display: none}
+header .search-card  .inner{margin: 0;padding: 0}
+header .search-card  .form-control .dropdown-menu{margin-top: 0!important;}
+header .search-card  .inner .dropdown-item{padding: 3px 10px}
+header .search-card  .inner .dropdown-item:hover{border: none;background: #eeeeee}
+header .search-card  .inner .selected{border: none;background: #eeeeee}
+header .search-card  .inner .selected a{border: none}
+header .search-card  .inner a:focus, .inner a:hover{
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+/*header*/
+
+
+/* start videos-viewed-recent*/
+
+.videos-viewed-recent h1{
+    width: 369px;
+    height: 38px;
+    font-family: Avenir;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+.videos-viewed-recent .video {
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px 0 rgba(166, 166, 166, 0.5);
+    border: solid 1px #f8f8f8;
+}
+.videos-viewed-recent .video .video-img img{
+    height: 208.1px;
+    width: 100%;
+}
+.videos-viewed-recent .details{padding: 5px}
+.videos-viewed-recent .video .title h2 {
+    width: 350px;
+    height: 23px;
+    font-family: Avenir;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.28;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.videos-viewed-recent .details .date {
+    width: 83px;
+    height: 19px;
+    font-family: Avenir-Roman;
+    font-size: 14px;
+    text-align: left;
+    color: #6c6b6c;
+    text-transform: capitalize;
+}
+.videos-viewed-recent .details .aje{
+    font-family: Avenir-Roman;
+    font-size: 14px;
+    color: #6c6b6c;
+    text-transform: uppercase;
+}
+.videos-viewed-recent .details .upload-by span{
+    width: 128px;
+    height: 19px;
+    font-family: Avenir-Roman;
+    font-size: 14px;
+    text-align: left;
+    color: #6c6b6c;
+    text-transform: capitalize;
+}
+.video-container{margin-bottom: 25px}
+
+
+/* end videos-viewed-recent*/
+
+
+/*start tags */
+.tags{
+    min-height: 400px;
+}
+.tags .title {
+    width: 72px;
+    height: 38px;
+    font-family: Avenir;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+    text-transform: uppercase;
+}
+.tags ul {padding: 0;margin: 0;list-style-type: none}
+.tags ul li {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+}
+.tags ul li a{
+    color: rgba(0, 0, 0, 0.8);
+
+}
+
+
+
+/*Responsive media*/
+@media only screen and (max-width: 991px) and (min-width: 767px)  {
+    header .aljazera-logo span {
+        font-size: 20px;
+    }
+    header .nav ul{
+        padding: 9px;
+    }
+    header .search-card{
+        bottom: -115px!important;
+    }
+    header .search-card  label{
+        left: 0!important;
+    }
+    header .nav ul{
+        text-align: right!important;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .nopadding{
+        padding: 0;
+    }
+    /*header*/
+    header .aljazera-logo span{
+        font-size: 20px;
+    }
+
+
+    header .nav ul {
+        margin: 0;
+        padding: 7px;
+        text-align: center;
+    }
+    header .Search-20-years{
+        width:auto;!important;
+        font-size: 25px;
+    }
+    header .search-card{
+        width: 100%;
+        position: relative;
+        max-height: initial;
+        max-width:  initial;
+        min-width:  initial;
+        min-height:  initial;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 2px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 3px 0 rgba(166, 166, 166, 0.5);
+        bottom: -50px;
+    }
+    header .search-card input{
+        display: block;
+        width: 100%!important;
+        margin-bottom: 10px;
+    }
+    header .search-card  label{
+        width: auto;
+        background: #cf6766;
+        padding: 10px;
+        height: auto;
+        border-radius: 50%;
+        cursor: pointer;
+        float: inherit;
+        position: relative;
+        bottom: 0;
+        left: 13px;
+    }
+    .bootstrap-select>.dropdown-toggle{
+        width:100%;
+        padding-right:25px;
+        z-index:1;
+        height: 40px;
+        border-bottom: 1px solid gainsboro;
+    }
+    /*end header*/
+
+/***************/
+/*start videos-viewed-recent*/
+    .videos-viewed-recent h1{
+        width: auto;
+        font-size: 20px;
+    }
+    .videos-viewed-recent .details{padding: 10px}
+
+    .videos-viewed-recent .video .title h2{
+        width: auto;
+    }
+    .videos-viewed-recent .details .save a{
+       padding: 5px 5px 5px 0;
+        width: 100%;
+        display: block;
+    }
+/*End videos-viewed-recent*/
+
+
+    /**tags*/
+    .tags {
+        min-height: auto;
+        margin-bottom: 50px;
+    }
+    .tags ul li {
+        width: auto !important;
+        margin-right: 12px;
+        font-size: 15px;
+    }
+}
+/*Responsive media*/

@@ -1,0 +1,56 @@
+
+.col-lg-7 ,.col-md-7,.col-lg-5 ,.col-md-6 ,.col-sm-6{padding: 0;overflow: hidden;}
+
+section .img-div{position: fixed;overflow: hidden;z-index: 1;}
+section .img-div img{height: 100%;width: 60%}
+section .right-con{;z-index: 9999;background: #ffffff;padding: 0}
+section .form-div{padding: 100px 46px 0 46px;background:#ffffff;   padding: 10% 15% 11px 15%; }
+section .form-div h1{font-size: 1.8em;font-weight: lighter;margin: 20px 0}
+section .form-div span{font-size: .9em;margin: 20px 0}
+section .form-div form{margin: 23px 0 25px 0}
+section .form-div input{ ;border-radius: 0!important;!important;}
+section .form-div .form-group {margin: 10px 0 }
+section  .form-div .form-group input{height: 30px!important;border-color:#b8b8b8 }
+section .form-div form .checkbox{margin: 30px 0}
+section .form-div .btn {background:#2672ec;border-radius: 0!important;border-color: #fff;transition: background 1s;
+    -moz-transition: background 1s;
+    -webkit-transition: background 1s;
+    -o-transition: background 1s;
+    transition-property: background;
+    transition-duration: 1s;}
+section .form-div .btn:hover {
+    background: #d4e3fb;
+  
+}
+.footer{
+    padding: 100px 0 0 0 ;
+}
+.footer ul{margin: 0;padding: 0}
+.footer ul li{display:  inline-block}
+.footer ul li {padding: 5px}
+
+@media (max-width: 992px){
+    section .img-div{position: static;}
+    section .img-div img{width: 100%}
+    section .form-div{padding: 20px}
+
+}
+@media(max-width:768px) {
+    section .img-div img{width: 228%}
+}
+
+.imgcon.col-lg-12 {
+    height: 220px;
+}
+
+img.img {
+    display: block;
+    margin: auto auto;
+    padding-top: 28px;
+}
+
+
+.imgcon {
+    padding-top: 48px;
+    margin-bottom: 60px;
+}

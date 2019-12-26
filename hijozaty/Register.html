@@ -24,7 +24,7 @@
 }
 
 h3 { 
-    margin: 1em 0;
+    margin: 1em 1em;
     color: #1e76b9;
 }
 
@@ -47,12 +47,12 @@ body {
                         <div class="form-row">
                             <div class="form-group col-md-6">
                                 <label for="">Name</label>
-                                <input type="text" class="form-control" placeholder="Your organization Name">
+                                <input type="text" class="form-control" placeholder="Your organization Name" required>
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="exampleFormControlTextarea1">Service Type</label>
-                        <select class="custom-select">
-                            <option selected>Service Type</option>
+                        <select class="custom-select" required>
+                            <option value="">Service Type</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
@@ -65,7 +65,7 @@ body {
                         <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="">Specialty</label>
-                                    <select class="custom-select" multiple size="3">
+                                    <select class="custom-select" multiple size="3" required>
                                       <!-- <option selected>None</option> -->
                                       <option value="1">Allergy</option>
                                       <option value="2">Anesthesia</option>
@@ -78,15 +78,15 @@ body {
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="exampleFormControlTextarea1">Specialty Description</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" maxlength="650" required></textarea>
                                 </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group col-md-4">
                                 <label for="exampleFormControlTextarea1">Country</label>
-                                <select class="custom-select">
-                                    <option selected>Country</option>
+                                <select class="custom-select" required>
+                                    <option value="">Country</option>
                                     <option value="Afganistan">Afghanistan</option>
                                     <option value="Albania">Albania</option>
                                     <option value="Algeria">Algeria</option>
@@ -337,11 +337,11 @@ body {
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="">Province</label>
-                                <input type="text" class="form-control" placeholder="Province">
+                                <input type="text" class="form-control" placeholder="Province" required>
                             </div>
                             <div class="form-group col-md-4">
                                 <label for="">City</label>
-                                <input type="text" class="form-control" placeholder="City">    
+                                <input type="text" class="form-control" placeholder="City" required>    
                             </div>
                         </div>
 
@@ -349,15 +349,15 @@ body {
                         <div class="form-row">
                             <div class="form-group col-md-4">
                                 <label for="">Area</label>
-                                <input type="text" class="form-control" placeholder="Area">
+                                <input type="text" class="form-control" placeholder="Area" required>
                             </div>
                             <div class="form-group col-md-3">
                                 <label for="">Street</label>
-                                <input type="text" class="form-control" placeholder="Street">
+                                <input type="text" class="form-control" placeholder="Street" required>
                             </div>
                             <div class="form-group col-md-3">
-                                <label for="">Bbuilding </label>
-                                <input type="number" class="form-control" placeholder="Bbuilding ">
+                                <label for="">Building </label>
+                                <input type="number" class="form-control" placeholder="Building ">
                             </div>
                             <div class="form-group col-md-2">
                                 <label for="">Floor</label>
@@ -378,7 +378,7 @@ body {
                              <div class="form-group col-md-3">
                                 <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                           
                              </div>
                              <div class="form-group col-md-3">
                                 <label for="">Website</label>
@@ -402,7 +402,7 @@ body {
                                 <label for="">Album</label>
                                 <div class="custom-file">
                                  
-                                  <input type="file" class="custom-file-input" id="customFile">
+                                  <input type="file" class="custom-file-input" id="customFile" accept="image/*">
                                   <label class="custom-file-label" for="customFile">Choose file</label>
                                 </div>
                              </div>

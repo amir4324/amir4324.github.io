@@ -71,6 +71,23 @@ body {
     padding-bottom: 1rem;
     color: #1e76b9;
 }
+
+.order  {
+     order: 1;
+     }
+.custom-btn{
+    width: 100%;
+    margin: .5rem 0;
+}     
+
+@media only screen and (max-width: 767px) {
+    .center{
+        margin-top: .9rem;
+        order: 1;
+    }
+}
+ 
+
     </style>
 </head>
 <body>
@@ -105,8 +122,11 @@ body {
             </div>
             <div class="col-md-6">
                 <div id="map"></div>
-
             </div>
+            <div class="col-md-6 order">
+                <button class="btn btn-primary custom-btn" type="submit">Contact</button>
+            </div>
+
            </div>
 
         
@@ -146,13 +166,13 @@ body {
     <script>
         // Initialize and add the map
         function initMap() {
-          // The location of Uluru
-          var uluru = {lat: -25.344, lng: 131.036};
-          // The map, centered at Uluru
+          // The location of iraq
+          var iraq = {lat: 33.3152, lng: 44.3661};
+          // The map, centered at iraq
           var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 4, center: uluru});
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({position: uluru, map: map});
+              document.getElementById('map'), {zoom: 12, center: iraq});
+          // The marker, positioned at iraq
+          var marker = new google.maps.Marker({position: iraq, map: map});
         }
             </script>
        <script async defer

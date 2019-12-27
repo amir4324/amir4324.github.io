@@ -64,7 +64,7 @@ body {
                                 <legend>Login Information</legend>
                             <div class="form-group col-md-6">
                                 <label for="exampleInputEmail1">Mobile number</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <input type="tel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                             </div>
                             <div class="form-group col-md-6">
                                 <label for="exampleInputPassword1">Password</label>
@@ -415,12 +415,9 @@ body {
                                 <label for="">Website</label>
                                 <input type="url" class="form-control" placeholder="Website">
                               </div>   
-
-                            
-
-                            
-
                          </div>
+
+
                           
                          <!-- Google Map -->
                          <div class="form-row"></div>
@@ -429,6 +426,13 @@ body {
                                 
                             </div>
                           <!-- Google Map -->
+
+                          <!-- Hidden input for google map -->
+                          <input id="x" type="hidden" name="location" value="">
+                          <input id="y" type="hidden" name="location" value="">
+
+                          
+                          <!-- Hidden input for google map -->
                       
                          <div  class="form-row">
                              <div class="form-group col-md-6">
@@ -485,14 +489,35 @@ body {
     <script>
         // Initialize and add the map
         function initMap() {
-          // The location of Uluru
-          var uluru = {lat: -25.344, lng: 131.036};
-          // The map, centered at Uluru
+          // The location of iraq
+          var iraq = {lat: 33.3152, lng: 44.3661};
+          // The map, centered at iraq
           var map = new google.maps.Map(
-              document.getElementById('map'), {zoom: 4, center: uluru});
-          // The marker, positioned at Uluru
-          var marker = new google.maps.Marker({position: uluru, map: map});
+              document.getElementById('map'), {zoom: 12, center: iraq});
+          // The marker, positioned at iraq
+          var marker = new google.maps.Marker({position: iraq, draggable:true, map: map});
+
+            //Marker drag
+        /**
+	 * Finds the new position of the marker when the marker is dragged.
+	 */
+   
+
+     google.maps.event.addListener( marker, "dragend", function ( event ) {
+		var lat, long, address, resultArray, citi;
+
+		
+		lat = marker.getPosition().lat();
+        long = marker.getPosition().lng();	
+        document.getElementById("x").value = lat;
+        document.getElementById("y").value = long;
+	});
+
+
+        //Marker drag
         }
+
+      
             </script>
        <script async defer
        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKEyjzEgMzOQPpHjaznHoZOErSkdlH6mg&callback=initMap">

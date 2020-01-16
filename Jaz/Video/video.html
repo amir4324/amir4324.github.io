@@ -51,7 +51,7 @@
       .footer{
         background-color: black;
         color: silver;
-    padding: 1rem 0;
+        padding: .1rem 0;
     text-align: center;
       }
       .card.inline-flex {
@@ -77,6 +77,14 @@ h5.Transcript {
 
 button.btn.btn-warning {
     font-weight: 600;
+    margin: 1rem;
+    display: block;
+}
+.mycard{
+    margin: .5rem 0;
+}
+.myh3{
+    margin: .5rem 1rem;
 }
   </style>
 	</head>
@@ -86,11 +94,12 @@ button.btn.btn-warning {
     <div class="container-fluid border">
         <div class="row black">
             
-                <div class="col-md">
+                <div class="col-md-6">
                     <img src="https://amir4324.github.io/Table_Page/images/logo.png" alt="">
-                    <h3 class="media">Media verification Manager - M</h3>
+                   
+                    <h3 class="media">Media verification Manager</h3>
                 </div>
-                <div class="col-md left">
+                <div class="col-md-6 left">
                     
                     <i class="icon ion-md-person"></i>
                 </div>
@@ -99,9 +108,9 @@ button.btn.btn-warning {
         <!-- body -->
         <div class="row">
             <!-- Right -->
-            <div class="col-md">
+            <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md">
+                    <div class="col-md-12">
                         <video height="100%" width="100%" muted="" id="video" controls="true" autoplay="autoplay">
                             <!--	<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">-->
                             <source src="videos/1.mp4" type="video/mp4">
@@ -116,28 +125,46 @@ button.btn.btn-warning {
                   
                 </div>
                 <div class="row">
-                    <button type="button" class="btn btn-warning">Upload</button>
-                    <h3>Trump defends ‘war crime’ threat to target cultural sites in Iran</h3>
+                    <div style="display: block;">
+                        <h3 class="myh3">Trump defends ‘war crime’ threat to target cultural sites in Iran</h3>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-warning">Upload</button>
+                    </div>
+                   
+                    
+                     
+                    
+                   
                     
                 </div>
                 <div class="row">
-                    <div class="col-md">
-                        <div class="card inline-flex" style="width: 18rem;">
+                    <div class="col-md-12">
+                   
+                      
+                     
+                          <div class="card mycard">
+                            <h5 class="card-header">Featured</h5>
                             <div class="card-body">
-                              <h5 class="card-title">Key Words</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Key Words</h6>
-                              <p class="card-text">is simply dummy text of the printing and typesetting industry.</p>
-                              <a href="#" class="card-link">Verify</a>
-                              <a href="#" class="card-link">link</a>
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#" class="btn btn-primary">Verify</a>
                             </div>
                           </div>
-                          <div class="card inline-flex" style="width: 18rem;">
+                          <div class="card mycard">
+                            <h5 class="card-header">Featured</h5>
                             <div class="card-body">
-                              <h5 class="card-title">Key Words</h5>
-                              <h6 class="card-subtitle mb-2 text-muted">Key Words</h6>
-                              <p class="card-text">is simply dummy text of the printing and typesetting industry.</p>
-                              <a href="#" class="card-link">Verify</a>
-                              <a href="#" class="card-link">link</a>
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#" class="btn btn-primary">Verify</a>
+                            </div>
+                          </div>
+                          <div class="card mycard">
+                            <h5 class="card-header">Featured</h5>
+                            <div class="card-body">
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              <a href="#" class="btn btn-primary">Verify</a>
                             </div>
                           </div>
                     </div>
@@ -149,7 +176,7 @@ button.btn.btn-warning {
              <!-- End Right -->
 
              <!-- Left -->
-            <div class="col-md height">
+            <div class="col-md-6 height">
                 <div class="row">
                     <h5 class="Transcript">Transcript:</h5>
                     <p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
@@ -166,7 +193,7 @@ button.btn.btn-warning {
        
 
         <div class="row">
-            <div class="col black">
+            <div class="col-md-12 black">
                 <h3 class="footer">Al Jazeera Media Network © 2019</h3>
             </div>
         </div>

@@ -63,8 +63,14 @@
 }
 .height {
 
-    min-height: 90vh;
+    /* min-height: 80vh; */
     background-color: #d9dcde;
+}
+
+.scroll { 
+
+    overflow: auto;
+    max-height: 600px;
 }
 h5.Transcript {
     font-size: 1.5em;
@@ -147,7 +153,11 @@ button.btn.btn-warning {
 
 //get height of right div
 
-var eRightHt = $(".rightSection").outerHeight();
+
+var eRightHt1 = $(".rightSection").outerHeight();
+var eRightHt2 = $(".rightSection1").outerHeight();
+
+var eRightHt = eRightHt1 + eRightHt2 + 80;
 
 // apply height to image in leftdiv
 
@@ -192,7 +202,7 @@ $(".leftSection").css("height",eRightHt);
                    
                   
                 </div>
-                <div class="">
+                <div class="rightSection1">
                     <div style="display: block;">
                         <h3 class="myh3">Trump defends ‘war crime’ threat to target cultural sites in Iran</h3>
                     </div>
@@ -229,7 +239,7 @@ $(".leftSection").css("height",eRightHt);
             <div class="col-md-4 height leftSection"  style="overflow: scroll;">
                 <div class="row">
                     <h5 class="Transcript">Transcription:</h5>
-                    <p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+                    <p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
         
                 </div>
 
@@ -244,7 +254,7 @@ $(".leftSection").css("height",eRightHt);
           <!-- Start below -->
           <div class="row ">
 
-            <div class="col-md-7 order">
+            <div class="col-md-7 order scroll">
                <!-- Start cardforfact -->
                 <div class="maxhe">
                     <div class="card mycard">
@@ -464,9 +474,9 @@ $(".leftSection").css("height",eRightHt);
               
           </div>
 
-            <div class="col-md-5">
+            <div class="col-md-5 ">
                 
-                <div class="card mycard">
+                <div class="card mycard scroll">
                     <h5 class="card-header">Featured</h5>
                     <div class="card-body">
                         <!-- Verfiy -->
@@ -511,6 +521,36 @@ $(".leftSection").css("height",eRightHt);
                         <!-- Verfiy -->
                            <!-- Verfiy -->
                            <div class="row vb">
+                            <div class="col-md-9">
+                                <p class="card-text">Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="btn btn-primary">Verify</a>
+                            </div>
+                        </div>
+                        <!-- Verfiy -->
+                         <!-- Verfiy -->
+                         <div class="row vb">
+                            <div class="col-md-9">
+                                <p class="card-text">Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="btn btn-primary">Verify</a>
+                            </div>
+                        </div>
+                        <!-- Verfiy -->
+                         <!-- Verfiy -->
+                         <div class="row vb">
+                            <div class="col-md-9">
+                                <p class="card-text">Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="btn btn-primary">Verify</a>
+                            </div>
+                        </div>
+                        <!-- Verfiy -->
+                         <!-- Verfiy -->
+                         <div class="row vb">
                             <div class="col-md-9">
                                 <p class="card-text">Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                             </div>

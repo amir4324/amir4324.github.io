@@ -12,6 +12,10 @@
           <!-- Bootstrap CSS -->
           <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
           <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+          <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     
         <title>Media verification Manager - M</title>
   <style>
@@ -90,7 +94,53 @@ button.btn.btn-warning {
 .card-body-back {
     background-color: antiquewhite;
 }
+.row.upper {
+    border-bottom: 2px solid #2323;
+}
+
+.card-body.card-body-back.borderf {
+  
+    border-bottom: 2px solid #c0c0c0;
+}
+
+.row.vb {
+
+   
+    border: 1px solid #888683;
+    background-color: #dedede;
+    margin: 1rem 0;
+    align-items: center;
+    -webkit-box-shadow: 4px 5px 11px -4px rgb(146, 145, 143);
+    -moz-box-shadow: 4px 5px 11px -4px rgba(250,235,215,1);
+    box-shadow: 4px 5px 11px -4px rgb(82, 82, 81);
+    padding: .5rem 0;
+
+
+}
+
+.card-body.card-body-back.borderf {
+    background-color: #d9dcde;
+}
+
+.maxhe {
+    max-height: 300px;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
   </style>
+  <script>
+      $(document).ready(function(){
+
+//get height of right div
+
+var eRightHt = $(".rightSection").outerHeight();
+
+// apply height to image in leftdiv
+
+$(".leftSection").css("height",eRightHt);
+
+});
+  </script>
 	</head>
 
 <body>
@@ -110,10 +160,10 @@ button.btn.btn-warning {
      
         </div>
         <!-- body -->
-        <div class="row">
+        <div class="row upper">
             <!-- Right -->
-            <div class="col-md-6">
-                <div class="row">
+            <div class="col-md-8 ">
+                <div class="row rightSection">
                     <div class="col-md-12">
                         <video height="100%" width="100%" muted="" id="video" controls="true" autoplay="autoplay">
                             <!--	<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">-->
@@ -128,72 +178,42 @@ button.btn.btn-warning {
                    
                   
                 </div>
-                <div class="row">
+                <div class="">
                     <div style="display: block;">
                         <h3 class="myh3">Trump defends ‘war crime’ threat to target cultural sites in Iran</h3>
                     </div>
                     <div>
+
+                        
                         <!-- <button type="button" class="btn btn-warning">Upload</button> -->
-                        <div class="input-group mb-3 myh3">
-                            <div class="input-group-prepend">
-                              
-                            </div>
+                        <div class="input-group mb-3">
+                           
                             <div class="custom-file">
                               <input type="file" class="custom-file-input" id="inputGroupFile01">
                               <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                             
                             </div>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text text-success">Analyze</span>
+                              </div>
                           </div>
-                    </div>
-                   
-                    
-                     
-                    
-                   
-                    
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                   
                       
-                     
-                          <div class="card mycard">
-                            <h5 class="card-header">Featured</h5>
-                            <div class="card-body">
-                              <!-- <h5 class="card-title">Special title treatment</h5> -->
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Verify</a>
-                              <!-- <h5 class="card-title">Special title treatment</h5> -->
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Verify</a>
-                              <!-- <h5 class="card-title">Special title treatment</h5> -->
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Verify</a>
-                              <!-- <h5 class="card-title">Special title treatment</h5> -->
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Verify</a>
-                            </div>
-                          </div>
-                          <div class="card mycard">
-                            <h5 class="card-header card-body-back">Result</h5>
-                            <div class="card-body card-body-back">
-                              <h5 class="card-title">Special title treatment</h5>
-                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              <a href="#" class="btn btn-primary">Fact</a>
-                            </div>
-                          </div>
-                        
                     </div>
-                  
-                 
                    
+                    
+                     
+                    
+                   
+                    
                 </div>
+              
             </div>
              <!-- End Right -->
 
              <!-- Left -->
-            <div class="col-md-6 height">
+            <div class="col-md-4 height leftSection"  style="overflow: scroll;">
                 <div class="row">
-                    <h5 class="Transcript">Transcript:</h5>
+                    <h5 class="Transcript">Transcription:</h5>
                     <p class="para">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
         
                 </div>
@@ -201,8 +221,281 @@ button.btn.btn-warning {
             </div>
             <!-- End Left -->
 
+           
+
         </div>
          <!--End body -->
+
+          <!-- Start below -->
+          <div class="row ">
+
+            <div class="col-md-7">
+               <!-- Start cardforfact -->
+                <div class="maxhe">
+                    <div class="card mycard">
+                        <h5 class="card-header card-body-back">Result for regulation of the wolf population ...</h5>
+                        <div class="card-body card-body-back borderf">
+                          <h5 class="card-title text-danger">Reuters</h5>
+                              <!-- Start Section -->
+                              <div class="row factsection">
+                                  <div class="col-md-2 align-self-center">
+                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4bmbzIsCId_g3mG2SwXze6I54a7_GmDMv6R2EUjbJw4qS9EJ&s" class="rounded float-left" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                      <h6>TOM TIFFANY</h6>
+                                      <p><a href="">Says federal regulation of the wolf population has led to attacks on livestock, driving down production, leading to dairy farms going out of business.</a></p>
+                                      <p>Wednesday, January 15th, 2020</p>
+                                  </div>
+                                  <div class="col-md-2 align-self-center">
+                                      <button type="button" class="btn btn-success">True</button>
+                                  </div>
+                              </div>
+                              <!-- End Section -->
+        
+                          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Fact</a> -->
+                        </div>
+        
+                        <div class="card-body card-body-back borderf">
+                          <h5 class="card-title text-danger">Politifact</h5>
+                              <!-- Start Section -->
+                              <div class="row factsection">
+                                  <div class="col-md-2 align-self-center">
+                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4bmbzIsCId_g3mG2SwXze6I54a7_GmDMv6R2EUjbJw4qS9EJ&s" class="rounded float-left" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                      <h6>TOM TIFFANY</h6>
+                                      <p><a href="">Says federal regulation of the wolf population has led to attacks on livestock, driving down production, leading to dairy farms going out of business.</a></p>
+                                      <p>Wednesday, January 15th, 2020</p>
+                                  </div>
+                                  <div class="col-md-2 align-self-center">
+                                      <button type="button" class="btn btn-danger">Fake</button>
+                                  </div>
+                              </div>
+                              <!-- End Section -->
+        
+                          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Fact</a> -->
+                        </div>
+        
+                        <div class="card-body card-body-back borderf">
+                          <h5 class="card-title text-danger">AFP</h5>
+                              <!-- Start Section -->
+                              <div class="row factsection">
+                                  <div class="col-md-2 align-self-center">
+                                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe_byz1STfLyowNQRRIJC2ZWzyfakG6KMdFBAjU2qthLEOhphh&s" class="rounded float-left" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                      <h6>TOM TIFFANY</h6>
+                                      <p><a href="">Says federal regulation of the wolf population has led to attacks on livestock, driving down production, leading to dairy farms going out of business.</a></p>
+                                      <p>Wednesday, January 15th, 2020</p>
+                                  </div>
+                                  <div class="col-md-2 align-self-center">
+                                      <button type="button" class="btn btn-success">True</button>
+                                  </div>
+                              </div>
+                              <!-- End Section -->
+        
+                          <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Fact</a> -->
+                        </div>
+                      </div>
+                </div>
+                <!-- End cardforfact -->
+                 <!-- Start cardforfact -->
+                 <div class="maxhe">
+               <div class="card mycard">
+                <h5 class="card-header card-body-back">Result for Says federal regulation ... </h5>
+                <div class="card-body card-body-back borderf">
+                  <h5 class="card-title text-danger">Reuters</h5>
+                      <!-- Start Section -->
+                      <div class="row factsection">
+                          <div class="col-md-2 align-self-center">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4bmbzIsCId_g3mG2SwXze6I54a7_GmDMv6R2EUjbJw4qS9EJ&s" class="rounded float-left" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                              <h6>TOM TIFFANY</h6>
+                              <p><a href="">Says federal regulation of the wolf population has led to attacks on livestock, driving down production, leading to dairy farms going out of business.</a></p>
+                              <p>Wednesday, January 15th, 2020</p>
+                          </div>
+                          <div class="col-md-2 align-self-center">
+                              <button type="button" class="btn btn-success">True</button>
+                          </div>
+                      </div>
+                      <!-- End Section -->
+
+                  <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Fact</a> -->
+                </div>
+
+                <div class="card-body card-body-back borderf">
+                  <h5 class="card-title text-danger">politifact</h5>
+                      <!-- Start Section -->
+                      <div class="row factsection">
+                          <div class="col-md-2 align-self-center">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4bmbzIsCId_g3mG2SwXze6I54a7_GmDMv6R2EUjbJw4qS9EJ&s" class="rounded float-left" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                              <h6>TOM TIFFANY</h6>
+                              <p><a href="">Says federal regulation of the wolf population has led to attacks on livestock, driving down production, leading to dairy farms going out of business.</a></p>
+                              <p>Wednesday, January 15th, 2020</p>
+                          </div>
+                          <div class="col-md-2 align-self-center">
+                              <button type="button" class="btn btn-danger">Fake</button>
+                          </div>
+                      </div>
+                      <!-- End Section -->
+
+                  <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Fact</a> -->
+                </div>
+
+                <div class="card-body card-body-back borderf">
+                  <h5 class="card-title text-danger">AFP</h5>
+                      <!-- Start Section -->
+                      <div class="row factsection">
+                          <div class="col-md-2 align-self-center">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe_byz1STfLyowNQRRIJC2ZWzyfakG6KMdFBAjU2qthLEOhphh&s" class="rounded float-left" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                              <h6>TOM TIFFANY</h6>
+                              <p><a href="">Says federal regulation of the wolf population has led to attacks on livestock, driving down production, leading to dairy farms going out of business.</a></p>
+                              <p>Wednesday, January 15th, 2020</p>
+                          </div>
+                          <div class="col-md-2 align-self-center">
+                              <button type="button" class="btn btn-success">True</button>
+                          </div>
+                      </div>
+                      <!-- End Section -->
+
+                  <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Fact</a> -->
+                </div>
+              </div>
+            </div>
+                <!-- End cardforfact -->
+                 <!-- Start cardforfact -->
+                 <div class="maxhe">
+               <div class="card mycard">
+                <h5 class="card-header card-body-back">Result for wolf population has led ...</h5>
+                <div class="card-body card-body-back borderf">
+                  <h5 class="card-title text-danger">Reuters</h5>
+                      <!-- Start Section -->
+                      <div class="row factsection">
+                          <div class="col-md-2 align-self-center">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4bmbzIsCId_g3mG2SwXze6I54a7_GmDMv6R2EUjbJw4qS9EJ&s" class="rounded float-left" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                              <h6>TOM TIFFANY</h6>
+                              <p><a href="">Says federal regulation of the wolf population has led to attacks on livestock, driving down production, leading to dairy farms going out of business.</a></p>
+                              <p>Wednesday, January 15th, 2020</p>
+                          </div>
+                          <div class="col-md-2 align-self-center">
+                              <button type="button" class="btn btn-success">True</button>
+                          </div>
+                      </div>
+                      <!-- End Section -->
+
+                  <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Fact</a> -->
+                </div>
+
+                <div class="card-body card-body-back borderf">
+                  <h5 class="card-title text-danger">politifact</h5>
+                      <!-- Start Section -->
+                      <div class="row factsection">
+                          <div class="col-md-2 align-self-center">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4bmbzIsCId_g3mG2SwXze6I54a7_GmDMv6R2EUjbJw4qS9EJ&s" class="rounded float-left" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                              <h6>TOM TIFFANY</h6>
+                              <p><a href="">Says federal regulation of the wolf population has led to attacks on livestock, driving down production, leading to dairy farms going out of business.</a></p>
+                              <p>Wednesday, January 15th, 2020</p>
+                          </div>
+                          <div class="col-md-2 align-self-center">
+                              <button type="button" class="btn btn-danger">Fake</button>
+                          </div>
+                      </div>
+                      <!-- End Section -->
+
+                  <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Fact</a> -->
+                </div>
+
+                <div class="card-body card-body-back borderf">
+                  <h5 class="card-title text-danger">AFP</h5>
+                      <!-- Start Section -->
+                      <div class="row factsection">
+                          <div class="col-md-2 align-self-center">
+                              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe_byz1STfLyowNQRRIJC2ZWzyfakG6KMdFBAjU2qthLEOhphh&s" class="rounded float-left" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                              <h6>TOM TIFFANY</h6>
+                              <p><a href="">Says federal regulation of the wolf population has led to attacks on livestock, driving down production, leading to dairy farms going out of business.</a></p>
+                              <p>Wednesday, January 15th, 2020</p>
+                          </div>
+                          <div class="col-md-2 align-self-center">
+                              <button type="button" class="btn btn-success">True</button>
+                          </div>
+                      </div>
+                      <!-- End Section -->
+
+                  <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Fact</a> -->
+                </div>
+              </div>
+            </div>
+                <!-- End cardforfact -->
+              
+          </div>
+
+            <div class="col-md-5">
+                
+                <div class="card mycard">
+                    <h5 class="card-header">Featured</h5>
+                    <div class="card-body">
+                        <!-- Verfiy -->
+                        <div class="row vb">
+                            <div class="col-md-9">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="btn btn-primary">Verify</a>
+                            </div>
+                        </div>
+                        <!-- Verfiy -->
+                          <!-- Verfiy -->
+                          <div class="row vb">
+                            <div class="col-md-9">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="btn btn-primary">Verify</a>
+                            </div>
+                        </div>
+                        <!-- Verfiy -->
+                          <!-- Verfiy -->
+                          <div class="row vb">
+                            <div class="col-md-9">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="col-md-3">
+                                <a href="#" class="btn btn-primary">Verify</a>
+                            </div>
+                        </div>
+                        <!-- Verfiy -->
+                 
+                    </div>
+                  </div>
+            </div>
+            
+              
+              
+             
+               
+            
+        </div>
+        <!-- End below -->
 
 
        

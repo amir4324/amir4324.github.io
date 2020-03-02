@@ -1,78 +1,75 @@
 <!DOCTYPE html>
 
-	
+
 <html>
- 
 
-	<head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <!-- Bootstrap CSS -->
-          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-          <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-          <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    
-        <title>Spread analysis</title>
- <style>
+<head>
 
-.container-fluid {
-         background-image: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ), url(SA.jpg);
-         background-size: cover;
-        
-         display: flex;
-  justify-content: center;
-  align-items: center;
-         background-position: center;
-         width: 100%;
-         height: 100vh;
-         perspective: 1000px;
-  perspective-origin: 50% 50%;
-  animation: animation 100s linear infinite;
-     }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-     @keyframes animation {
-   100%{
-    background-position:0px -3000px;
-  }
-     }
+    <title>Spread analysis</title>
+    <style>
+        .container-fluid {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2)), url(SA.jpg);
+            background-size: cover;
 
-     h1{
-         color: antiquewhite;
-         margin: 1.7rem 0;
-    font-size: 4em;
-    text-align: center;
-     }
-     .form-inline .form-control{
-         width: 100%;
-     }
-.btn{
-    margin: 1rem 0;
-  
-}
-    
- </style>
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            perspective: 1000px;
+            perspective-origin: 50% 50%;
+            animation: animation 100s linear infinite alternate;
+        }
 
-	</head>
+        @keyframes animation {
+            100% {
+                background-position: 0px -3000px;
+            }
+        }
+
+        h1 {
+            color: antiquewhite;
+            margin: 1.7 rem 0;
+            font-size: 4em;
+            text-align: center;
+        }
+
+        .form-inline .form-control {
+            width: 100%;
+        }
+
+        .btn {
+            margin: 1rem 0;
+
+        }
+    </style>
+
+</head>
 
 <body>
 
-  
+
 
     <div class="container-fluid">
         <div class="container">
-            <div class="row"> 
+            <div class="row">
                 <div class="col-sm">
-                    <h1>Find The Spread Analysis Impact</h1>  
-                </div>    
-                   
+                    <h1>Find The Spread Analysis Impact</h1>
+                </div>
+
             </div>
             <div class="row">
                 <div class="col-md-3"></div>
@@ -80,27 +77,29 @@
                 <div class="col-md-6">
                     <form class="form-inline mr-auto mb-10">
                         <input class="form-control" type="text" placeholder="Type your tweet" aria-label="Search">
-                    
-                      </form>
+
+                    </form>
                 </div>
                 <div class="col-md-3">
-                 
+
                 </div>
 
-               
+
             </div>
             <div class="row">
                 <div class="col-md-5">
-                 
+
                 </div>
                 <div class="col-md-2">
                     <form class="form-inline mr-auto mb-10">
-                     
-                        <button class="btn btn-primary  btn-block" type="submit">Search</button>
-                      </form>
+
+                        <button class="btn btn-primary  btn-block" type="submit"><a style="color: seashell;"
+                                href="SA copy.html">Search</a>
+                        </button>
+                    </form>
                 </div>
                 <div class="col-md-5">
-                 
+
                 </div>
 
             </div>
@@ -109,11 +108,11 @@
                 <div class="col-md-6"> </div>
             </div>
         </div>
-    
 
 
 
-       
+
+
 
 
     </div>
@@ -125,4 +124,4 @@
 </body>
 
 </html>
- <!-- End -->
+<!-- End -->

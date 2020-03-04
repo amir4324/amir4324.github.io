@@ -45,8 +45,14 @@
 
         .shadow {
 
-            background-color: rgba(247, 247, 247, 0.5);
+            /* background-color: rgba(247, 247, 247, 0.5); */
 
+        }
+
+        .card-title {
+            margin-bottom: .75rem;
+            color: aliceblue;
+            font-weight: 600;
         }
 
         .container-fluid {
@@ -71,6 +77,14 @@
             100% {
                 background-position: 0px 3000px;
             }
+        }
+
+        .w-25 {
+            width: 25% !important;
+            background: transparent;
+            color: aliceblue;
+            border: 3px solid #8a8a8a;
+            border-radius: 23px;
         }
 
         h1 {
@@ -130,9 +144,20 @@
         }
 
         .sidebg {
-            background-color: #f7f7f7;
-            ;
-            /* color: #faebd7; */
+
+
+            background-color: rgba(255, 255, 255, .15);
+            backdrop-filter: blur(5px);
+        }
+
+        .card {
+            color: rgb(197, 197, 197);
+            background-color: inherit;
+        }
+
+        .list-group-item {
+
+            background-color: inherit;
         }
 
         img {
@@ -140,6 +165,34 @@
             height: 400px;
             margin: 0 auto;
             display: block;
+
+            object-fit: contain;
+        }
+
+        .btn-link {
+            font-weight: 400;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .card-header {
+            padding: .75rem 1.25rem;
+            margin-bottom: 0;
+            background-color: rgba(0, 0, 0, .03);
+
+        }
+
+        .card-header {
+            padding: .75rem 1.25rem;
+            margin-bottom: 0;
+            border-bottom: 4px solid rgba(224, 224, 224, 0.95);
+
+        }
+
+        .card-header .card-body {
+
+            border-bottom: 4px solid rgba(224, 224, 224, 0.95);
         }
     </style>
 
@@ -181,7 +234,7 @@
                                     <h5 class="mb-0">
                                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                                             aria-expanded="true" aria-controls="collapseOne">
-                                            Opened Cases
+                                            Watch List
                                         </button>
                                     </h5>
                                 </div>
@@ -206,7 +259,7 @@
                                         <button class="btn btn-link collapsed" data-toggle="collapse"
                                             data-target="#collapseTwo" aria-expanded="false"
                                             aria-controls="collapseTwo">
-                                            Closed Cases
+                                            In Progress
                                         </button>
                                     </h5>
                                 </div>
@@ -230,11 +283,29 @@
                                         <button class="btn btn-link collapsed" data-toggle="collapse"
                                             data-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                            Watch List
+                                            Closed Cases
                                         </button>
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingFour">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse"
+                                            data-target="#collapseFour" aria-expanded="false"
+                                            aria-controls="collapseFour">
+                                            Report
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                     data-parent="#accordion">
                                     <div class="card-body">
                                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
@@ -254,7 +325,7 @@
             <!-- Start Content -->
             <div class="col ">
 
-                <header class="shadow shadow mb-5 mt-2">
+                <header class="shadow shadow mb-5 mt-5">
 
                     <div class="row">
                         <div class="col-md-12">
@@ -311,7 +382,7 @@
                                     Nationality
                                     Profession\Category
                                 </p>
-                                <a href="#" class="btn btn-primary">More</a>
+                                <!-- <a href="#" class="btn btn-primary">More</a> -->
                             </div>
                         </div>
                         <div class="card w-25">
@@ -321,7 +392,7 @@
                                     Number of following
                                     Number of followers
                                 </p>
-                                <a href="#" class="btn btn-primary">More</a>
+                                <!-- <a href="#" class="btn btn-primary">More</a> -->
                             </div>
                         </div>
                         <div class="card w-25">
@@ -331,7 +402,7 @@
                                     Hashtag\Post Name
                                     Trend
                                 </p>
-                                <a href="#" class="btn btn-primary">More</a>
+                                <!-- <a href="#" class="btn btn-primary">More</a> -->
                             </div>
                         </div>
 
@@ -340,13 +411,13 @@
 
                 <div class="row shadow shadow mb-5 mt-2">
                     <div class="col-md-12 ">
-                        <img class="" src="bot.PNG" alt="">
+                        <img class="" src="4a838826-918b-4088-8bc2-6144107f8f9e.jpg" alt="">
                     </div>
                 </div>
 
                 <div class="row shadow shadow mb-5 mt-2">
                     <div class="col-md-12">
-                        <img src="loudhuman-company-tree.png" alt="">
+                        <img src="8dc4f1bb-0f19-4f00-afd3-7bac3bff0be6.jpg" alt="">
                     </div>
                 </div>
 

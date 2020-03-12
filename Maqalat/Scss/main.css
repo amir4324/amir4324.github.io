@@ -185,6 +185,7 @@ section > h3 {
           transition-timing-function: linear;
   -webkit-transition-delay: 5ms;
           transition-delay: 5ms;
+  position: relative;
 }
 
 .article:hover {
@@ -222,7 +223,7 @@ section > h3 {
 }
 
 .article > p {
-  margin-bottom: 1em;
+  margin-bottom: 5em;
   color: #7f888f;
   font-size: 100%;
   line-height: 1.5;
@@ -238,6 +239,8 @@ section > h3 {
   color: #f56a6a;
   cursor: pointer;
   font-size: 0.9em;
+  position: absolute;
+  bottom: 7px;
   height: 3.5em;
   letter-spacing: 0.075em;
   line-height: 3.5em;

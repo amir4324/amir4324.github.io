@@ -257,6 +257,7 @@ section > h3 {
 @media (min-width: 900px) {
   .Latest-Article {
     max-width: 1600px;
+    margin: 0 auto;
   }
 }
 
